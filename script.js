@@ -1,5 +1,10 @@
 const button = document.querySelector(".switch");
+const button_container = document.querySelector(".switch-container");
 const body = document.body;
+
+button_container.addEventListener("click", () => {
+    body.classList.toggle("dark")
+});
 
 button.addEventListener("click", () => {
     body.classList.toggle("dark")

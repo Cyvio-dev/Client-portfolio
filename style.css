@@ -28,7 +28,7 @@
 #projects-container,
 #contact-container {
   scroll-margin-top: 120px;
-  margin-top: 20%;
+  margin-top: 200px;
 }
 
 body {
@@ -167,6 +167,7 @@ html {
 
 .switch-container {
   box-sizing: border-box;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -178,6 +179,7 @@ html {
   width: 40px;
   height: 40px;
 
+  background: none;
   border: 1px solid var(--font-color);
   border-radius: 999px;
 }
@@ -185,6 +187,7 @@ html {
 .switch {
   box-sizing: border-box;
   border-radius: 999px;
+  position: absolute;
 
   width: 15px;
   height: 15px;
