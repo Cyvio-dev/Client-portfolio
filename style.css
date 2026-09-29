@@ -130,7 +130,6 @@ html {
 }
 .nav-sections .contact {
   background: var(--font-color);
-  border-radius: 20px;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -353,7 +352,6 @@ html {
   height: 40px;
 
   background: var(--font-color);
-  border-radius: 10px;
 }
 .intro-buttons a {
   width: 158px;
@@ -653,7 +651,6 @@ html {
 .play-on-roblox {
   text-decoration: none;
   color: var(--font-color);
-  border-radius: 10px;
   border: 1px solid var(--font-color);
   padding: 10px;
   font-weight: 700;
