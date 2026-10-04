@@ -770,6 +770,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 0px;
   gap: 30px;
 
@@ -782,7 +783,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 0px;
-  gap: 200px;
+  gap: 150px;
 
   width: 100%;
 }
