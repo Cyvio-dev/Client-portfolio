@@ -9,6 +9,7 @@
   --font-color: #000000;
   --light-color: #2b2b2bc3;
   --filter: invert(0);
+  --box-shadow: #787878;
 }
 
 .dark {
@@ -16,6 +17,7 @@
   --font-color: #ffffff;
   --light-color: #e3e2e299;
   --filter: invert(1);
+  --box-shadow: #7e7e7e;
 }
 
 .click {
@@ -756,7 +758,179 @@ html {
   color: var(--light-color);
 }
 
-#projects-container .list-container {
+.featured-tag {
+  margin-top: 30px;
+}
+
+.featured-tag span{
+  border: 1px solid var(--font-color);
+  padding: 10px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.featured-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-project-container {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 10px;
+  box-sizing: border-box;
+
+  border: 1px solid var(--font-color);
+  border-radius: 8px;
+}
+
+.featured-video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.featured-video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-video-container iframe:hover {
+  transform: scale(1.03);
+}
+
+.featured-project-container .video-description-container .description-title {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: clamp(10px, 6vw, 20px);
+  color: var(--font-color);
+}
+
+.featured-project-container .video-description-container .description {
+  font-size: 13px;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: var(--light-color);
+}
+
+.featured-project-container .video-description-container .tags {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.featured-project-container .video-description-container .tags ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.featured-project-container .video-description-container .tags ul li {
+  margin-top: 5px;
+  margin-right: 10px;
+  border: 1px solid var(--font-color);
+  padding: 5px 5px;
+  width: 75px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--font-color);
+  list-style: none;
+  text-align: center;
+  box-shadow: 0px 3px 4px var(--box-shadow);
+}
+
+.project-row-container {
+  margin: 20px auto 0 auto;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--font-color);
+  border-radius: 8px;
+}
+
+.project-video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-video-container iframe:hover {
+  transform: scale(1.03);
+}
+
+.project-description-container .description-title {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: clamp(10px, 6vw, 20px);
+  color: var(--font-color);
+}
+
+.project-description-container .description {
+  font-size: 13px;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: var(--light-color);
+}
+
+.project-description-container .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 1px;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+.project-description-container .tags span {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  padding: 4px 9px;
+  margin-left: 10px;
+  
+  border: 1px solid var(--font-color);
+  border-radius: 999px;
+  
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--font-color);
+  text-align: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  box-shadow: 0px 2px 4px var(--box-shadow);
+}
+@media screen and (max-width: 1100px) {
+  .project-row-container {
+    flex-wrap: wrap;
+  }
+}
+/* #projects-container .list-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -888,7 +1062,7 @@ html {
   .projects-title {
     letter-spacing: -1px;
   }
-}
+} */
 
 /* CONTACT */
 
